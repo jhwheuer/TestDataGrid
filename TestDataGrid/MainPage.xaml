@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="TestDataGrid.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestDataGrid"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <controls:DataGrid >
+        <controls:DataGrid.Columns>
+            <controls:DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+        </controls:DataGrid.Columns>
+    </controls:DataGrid>
+</Page>
